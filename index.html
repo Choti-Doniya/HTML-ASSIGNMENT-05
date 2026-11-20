@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+</head>
+<body>
+<center>
+    <h1>Registration Form</h1>
+
+    <form action="#" method="POST" enctype="multipart/form-data">
+
+        <!-- First Name -->
+        <label>First Name:</label><br>
+        <input type="text" name="first_name" placeholder="Enter first name" required><br><br>
+
+        <!-- Last Name -->
+        <label>Last Name:</label><br>
+        <input type="text" name="last_name" placeholder="Enter last name" required><br><br>
+
+        <!-- Father Name -->
+        <label>Father's Name:</label><br>
+        <input type="text" name="father_name" placeholder="Enter father's name" required><br><br>
+
+        <!-- Date of Birth -->
+        <label>Date of Birth:</label><br>
+        <input type="date" name="dob" required><br><br>
+
+        <!-- Gender -->
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <input type="radio" name="gender" value="Other"> Other<br><br>
+
+        <!-- CNIC / B-Form -->
+        <label>CNIC / B-Form No:</label><br>
+        <input type="text" name="cnic" placeholder="42101-1234567-1"><br><br>
+
+        <!-- Email Address -->
+        <label>Email Address:</label><br>
+        <input type="email" name="email" placeholder="example@gmail.com" required><br><br>
+
+        <!-- Password -->
+        <label>Password:</label><br>
+        <input type="password" name="password" placeholder="Enter password" required><br><br>
+
+        <!-- Select City -->
+        <label>Select City:</label><br>
+        <select name="city" required>
+            <option value="">-- Select City --</option>
+            <option value="Karachi">Karachi</option>
+            <option value="Lahore">Lahore</option>
+            <option value="Islamabad">Islamabad</option>
+            <option value="Rawalpindi">Rawalpindi</option>
+            <option value="Peshawar">Peshawar</option>
+            <option value="Quetta">Quetta</option>
+        </select><br><br>
+
+        <!-- Address -->
+        <label>Full Address:</label><br>
+        <textarea name="address" rows="3" cols="30" placeholder="Enter your full address"></textarea><br><br>
+
+        <!-- Education -->
+        <label>Last Education / Qualification:</label><br>
+        <select name="education">
+            <option value="Matric">Matric / O-Levels</option>
+            <option value="Intermediate">Intermediate / A-Levels</option>
+            <option value="Bachelor">Bachelor's Degree</option>
+            <option value="Master">Master's Degree</option>
+        </select><br><br>
+
+        <!-- Course Selection (Sirf ek select karne ke liye radio buttons ya dropdown - yahan dropdown best hai) -->
+        <label>Select Course (Choose 1):</label><br>
+        <select name="course" required>
+            <option value="">-- Choose Course --</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Graphic Designing">Graphic Designing</option>
+            <option value="Digital Marketing">Digital Marketing</option>
+            <option value="Python Programming">Python Programming</option>
+        </select><br><br>
+
+        <!-- Skills to Learn (Checkboxes) -->
+        <label>Skills to Learn:</label><br>
+        <input type="checkbox" name="skills" value="HTML"> HTML
+        <input type="checkbox" name="skills" value="CSS"> CSS
+        <input type="checkbox" name="skills" value="JavaScript"> JavaScript<br><br>
+
+        <!-- Picture Upload -->
+        <label>Upload Picture:</label><br>
+        <input type="file" name="picture" accept="image/*"><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit Form">
+        <input type="reset" value="Reset">
+
+    </form>
+</center>
+</body>
+</html>
